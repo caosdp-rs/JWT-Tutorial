@@ -2,9 +2,9 @@ POST http://localhost:5000/api/users
 Content-Type: application/json
 
 {
-    "name":"admin",
-    "email":"admin@gmail.com",
-    "password":"admin"
+    "name":"anonymous",
+    "email":"anonymous@gmail.com",
+    "password":"anonymous"
 }
 
 ###
@@ -15,4 +15,14 @@ Content-Type: application/json
     "email":"admin@gmail.com",
     "password":"admin"
 }
+###
+GET http://localhost:5000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOTkyYTBhZTktZGQ5OC00YzQyLWEyMTMtNzRmMThmMjNjMTc3IiwidXNlcl9uYW1lIjoiYWRtaW4iLCJ1c2VyX2VtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjQ4Nzg5MzYyLCJleHAiOjE2NDg3ODkzODJ9.9PSexjj9C4oTiVy65G1EAIYaKKzf8NTlNtP7r8_5H8Y
+###
+
+GET http://localhost:5000/api/auth/refresh_token
+###
+DELETE http://localhost:5000/api/auth/refresh_token HTTP/1.1
+
+
 
